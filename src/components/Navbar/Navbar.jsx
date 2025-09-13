@@ -10,6 +10,8 @@ import { logout } from '../../firebase'
 import { useState } from 'react'
 import { auth } from '../../firebase'
 import { onAuthStateChanged } from 'firebase/auth';
+import { Link } from 'react-router-dom'
+import Jkpage from '../Jk/Hopepage'
 
 const Navbar = () => {
   const navref=useRef();
@@ -30,16 +32,16 @@ const Navbar = () => {
     return () => unsubscribe();
   }, []);
   return (
-    <div ref={navref} className='Navbar w-full py-5 px-[6%] flex justify-between fixed text-[14px] text-[#e5e5e5] backdrop-blur- '>
+    <div ref={navref} className='Navbar w-full py-5 px-[6%] flex justify-between fixed text-[14px] text-[#e5e5e5] '>
         <div className='navbar-left flex items-center gap-[50px] '>
             <img src={logo} alt="" className='w-[90px] nav-options' />
             <ul className='flex gap-5 ' >
-                <li className='nav-options '>Home</li>
-                <li className='nav-options'>TV Shows</li>
-                <li className='nav-options'>New & Popular</li>
-                <li className='nav-options'>Movies</li>
-                <li className='nav-options'>My List</li>
-                <li className='nav-options'>Browse by Languages</li>
+                <Link to="/hope"><li className='nav-options'>Home</li></Link>
+                <Link to="/hope"><li className='nav-options'>TV Shows</li></Link>
+                <Link to="/hope"><li className='nav-options'>New & Popular</li></Link>
+                <Link to="/hope"><li className='nav-options'>Movies</li></Link>
+                <Link to="/hope"><li className='nav-options'>My List</li></Link>
+                <Link to="/hope"><li className='nav-options'>Browse by Languages</li></Link>
             </ul>
             </div>
         <div className='navbar-right flex gap-5 items-center'>
