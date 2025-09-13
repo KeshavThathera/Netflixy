@@ -17,7 +17,7 @@ const Home = () => {
           <img src={hero_banner} alt="" className='banner-img w-full' />
           <div className="hero-caption absolute w-full pl-[6%] bottom-0 ">
           <img src={hero_title} alt="" className='caption-img w-[90%] max-w-[420px] mb-[30px]' />
-          <p className=' max-w-[700px] text-[17px] mb-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis temporibus, nihil praesentium dignissimos ipsum architecto esse sed quas repellat voluptates facilis velit eveniet dicta labore. Placeat vel illo veritatis reiciendis?</p>
+          <p className=' max-w-[700px] text-[17px] mb-5'>Into the Wild tells the true story of Christopher McCandless, a young man from a well-off family who rejects modern society and sets out on a journey of self-discovery across America.</p>
           <div className="hero-btns flex gap-[10px] mb-[50px] ">
             <button className='btn px-2 py-5 border-0 outline-none inline-flex items-center gap-[10px] text-black text-base font-semibold cursor-pointer  bg-white rounded h-5 hover:bg-[#ffffffbf]' ><img src={play_icon} alt="" className='w-[25px] ' /> Play</button>
               <button className='btn dark-btn px-2 py-5 border-0 outline-none inline-flex items-center gap-[10px] text-white text-base font-semibold cursor-pointer bg-[#6d6d6eb3] rounded h-6 hover:bg-[#6d6d6e66]' ><img src={info_icon} alt="" className='w-[25px]' /> More Info</button>
