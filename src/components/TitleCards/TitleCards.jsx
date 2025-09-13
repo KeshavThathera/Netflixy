@@ -41,7 +41,7 @@ useEffect(()=>{
               <img
                 src={`https://image.tmdb.org/t/p/w500`+movie.backdrop_path}
                 alt={movie.original_title}
-                className="w-[240px] rounded cursor-pointer"
+                className="w-[240px] rounded cursor-pointer hover:scale-105 hover:shadow-2xl  transition duration-300"
               />
               <p className="mt-2 text-white text-sm absolute bottom-3 right-3">{movie.original_title}</p>
             </Link>

@@ -9,5 +9,18 @@ body{
     @apply w-5 cursor-pointer;
 }
 .footer-icons{
-    @apply w-[30px] h-[30px] object-contain;
+    @apply w-[30px] h-[30px] object-contain  hover:text-red-500 hover:drop-shadow-lg transition duration-300;
+}
+.footer-li{
+  @apply text-white
+}
+.nav-options{
+  @apply hover:scale-110 transition duration-300
+}
+.foot-options{
+  @apply relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-500 after:left-0 after:bottom-0 hover:text-red-500 hover:after:w-[75%] after:transition-all after:duration-300
+}
+.copyright{
+  @apply relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-500 after:left-0 after:bottom-0 hover:after:w-[30%] after:transition-all after:duration-300
+
 }
