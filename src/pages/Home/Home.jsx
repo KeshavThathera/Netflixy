@@ -26,10 +26,10 @@ const Home = () => {
           </div>
         </div>
         <div className="more-cards pl-[6%]">
-         <TitleCards title="Now Playing" category="now_playing" />
           <TitleCards title="Popular" category="popular" />
           <TitleCards title="Top Rated" category="top_rated" />
           <TitleCards title="Upcoming" category="upcoming" />
+           <TitleCards title="Now Playing" category="now_playing" />
 
         </div> 
         <Footer></Footer>
