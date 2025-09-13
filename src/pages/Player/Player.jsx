@@ -26,7 +26,7 @@ const Player = () => {
 },[])
   return (
     <div className='player h-screen flex flex-col justify-center items-center '>
-      <img src={back_arrow_icon} alt="" className='absolute top-5 left-5 w-[50px] cursor-pointer'/>
+      <img src={back_arrow_icon} alt="" className='absolute top-5 left-5 w-[50px] cursor-pointer' onClick={()=>{navigate(-2)}}/>
       <iframe width='90%' height='90%' src={`https://www.youtube.com/embed/${videodata.key}`} title='trailer' frameBorder='0' allowFullScreen className='rounded-[10px]'></iframe>
       <div className="player-info flex items-center justify-between w-[90%]">
         <p>Published Date:{videodata.published_at.slice(0,10)}</p>
