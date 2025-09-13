@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='footer px-[30px] py-[4%] max-w-[1000px] my-0 mx-auto '>
         <div className="footer-icons flex gap-5 my-10 mx-0">
-         <a href="https://www.instagram.com/keeshavv.vvv?igsh=bHhhbHlneWczbG5z"><img src={facebook_icon} alt="" className='footer-icons hover:scale-110 hover:text-pink-600 transition duration-300' /></a> 
+          <img src={facebook_icon} alt="" className='footer-icons' />
            <img src={instagram_icon } alt="" className='footer-icons '/>
             <img src={twitter_icon} alt="" className='footer-icons'/>
              <img src={youtube_icon} alt="" className='footer-icons' />
